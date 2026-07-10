@@ -302,28 +302,6 @@ Tekrar Oyna
 
 }
 
-const ownPrize = values[selectedBox];
-
-const allBoxes = document.querySelectorAll(".box");
-
-allBoxes[selectedBox].classList.add("open");
-allBoxes[selectedBox].innerText = ownPrize.toLocaleString("tr-TR")+" ₺";
-
-setTimeout(()=>{
-    
-document.body.style.background="#064420";
-alert(
-"Tebrikler!\n\n"+
-"Kendi kutunda\n"+
-ownPrize.toLocaleString("tr-TR")+" ₺ vardı!"
-);
-
-location.reload();
-
-},500);
-
-}
-
 function remainingPrizes(){
 
 let arr=[];
