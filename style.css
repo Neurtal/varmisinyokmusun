@@ -110,3 +110,85 @@ grid-template-columns:repeat(2,140px);
 }
 
 }
+
+.box{
+
+box-shadow:0 0 20px rgba(255,215,0,.4);
+
+animation:pop .4s;
+
+}
+
+.box.open{
+
+animation:flip .5s;
+
+}
+
+@keyframes pop{
+
+0%{
+
+transform:scale(.2);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes flip{
+
+0%{
+
+transform:rotateY(0deg);
+
+}
+
+50%{
+
+transform:rotateY(90deg);
+
+}
+
+100%{
+
+transform:rotateY(0deg);
+
+}
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+transition:.2s;
+
+}
+
+.money{
+
+transition:.3s;
+
+}
+
+.money:hover{
+
+transform:scale(1.05);
+
+}
+
+body{
+
+background:radial-gradient(circle at top,#1d2951,#05070f);
+
+}
